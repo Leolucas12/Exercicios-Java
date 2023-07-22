@@ -4,10 +4,10 @@ public class App {
     public static void main(String[] args) throws Exception {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Enter the first number: ");
+        System.out.print("Digite o primeiro número: ");
         int number1 = scanner.nextInt();
 
-        System.out.print("Enter the second number: ");
+        System.out.print("Digite o segundo número: ");
         int number2 = scanner.nextInt();
 
         if (number1 > number2) {
