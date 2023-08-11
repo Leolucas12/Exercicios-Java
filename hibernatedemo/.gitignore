@@ -1,0 +1,65 @@
+# Compiled class files
+target/
+
+# Maven specific files
+*.iml
+.idea/
+.idea_modules/
+*.log
+*.ipr
+*.iws
+*.DS_Store
+
+# Eclipse specific files
+.classpath
+.project
+.settings/
+.metadata/
+
+# Logs
+logs/
+*.log
+
+# Package Files #
+*.jar
+*.war
+*.nar
+*.rar
+*.zip
+*.tar.gz
+*.tar.bz2
+*.tar.xz
+*.tar.Z
+*.tar.lzma
+*.tar.Z
+*.tbz2
+*.tgz
+*.bz2
+*.gz
+*.lzma
+*.xz
+*.zip
+*.war
+*.ear
+
+# Local configuration file
+.springBeans
+
+# Idea
+.idea
+
+# VS Code
+.vscode
+
+# Intellij
+*.iml
+*.ipr
+*.iws
+*.log
+.idea/
+.idea_modules/
+
+# Gradle
+.gradle/
+build/
+!.gradle/wrapper/
