@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+  version="2.0">
+
+  <persistence-unit name="livraria" transaction-type="RESOURCE_LOCAL">
+    <!-- Specify the JPA provider -->
+    <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
+    <!-- Define the entity classes -->
+    <class>com.example.livraria.model.Livro</class>
+    <class>com.example.livraria.model.Impresso</class>
+    <class>com.example.livraria.model.Eletronico</class>
+    <class>com.example.livraria.model.Venda</class>
+    <!-- Add more entity classes here -->
+
+    <!-- Database connection properties -->
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/livraria" />
+      <property name="javax.persistence.jdbc.user" value="postgres" />
+      <property name="javax.persistence.jdbc.password" value="postgres" />
+      <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
+
+      <!-- Hibernate-specific properties -->
+      <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect" />
+      <property name="hibernate.hbm2ddl.auto" value="update" /> <!-- Automatically update the schema -->
+      <property name="hibernate.show_sql" value="false" /> <!-- Show SQL statements in the console -->
+    </properties>
+  </persistence-unit>
+</persistence>
